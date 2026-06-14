@@ -6,7 +6,7 @@ class Bandit_Env:
     def __init__(self, n_arms, bandit_args = {}):
         self.n_arms = n_arms
         self.q_true_var = bandit_args.get('q_true_var', 1)
-        self.q_true_mean = bandit_args.get('q_true_mean', 1)
+        self.q_true_mean = bandit_args.get('q_true_mean', 0)
         self.reward_var = bandit_args.get('reward_var', 1)
         self.is_non_stationary = bandit_args.get('is_non_stationary', False)
 
